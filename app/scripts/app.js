@@ -1,11 +1,11 @@
 $(function(){
     var list = [{
-        name:'dubai',
+        name:'Dubai',
         view:['city','mountain','natural'],
         price: 2,
         travletype:['family','single']
     },{
-        name:'beijing',
+        name:'Beijing',
         view:['city','history','museum','mountain','shopping'],
         price: 3,
         travletype:['family','romantic','single']
