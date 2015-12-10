@@ -7,6 +7,9 @@ $(function(){
     };
     $('#hotel-page').attr('src',data.link);
     $('#city-name').html(data.name);
+    $('.returnBtn').click(function(){
+        location.href='index.html';
+    });
 });
 
 function getUrlParameter(sParam) {
