@@ -44,3 +44,7 @@ button {
 	height: 20px;
 	padding: 2px;
 }
+#hotel-list .city-name,#hotel-list .city-view, #hotel-list .city-travletype{
+	float:left;
+	padding-right: 10px;
+}

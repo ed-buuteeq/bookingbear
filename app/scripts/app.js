@@ -20,7 +20,7 @@ function showResult(list){
         var view = $(hoteldiv.find('.city-view'));
         view.empty();
         $.each(hotel.view, function(i,v){
-            view.append('<img src="styles/image/view/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
+            view.append('<img src="styles/image/icon/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
         });
         var traveltype = $(hoteldiv.find('.city-traveltype'));
         traveltype.empty();
