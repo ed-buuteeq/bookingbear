@@ -29,12 +29,12 @@ function showResult(list){
         var view = $(hoteldiv.find('.city-view'));
         view.empty();
         $.each(hotel.view, function(i,v){
-            view.append('<img src="styles/image/view/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
+            view.append('<img src="styles/image/icon/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
         });
         var travletype = $(hoteldiv.find('.city-travletype'));
         travletype.empty();
         $.each(hotel.travletype, function(i,v){
-            travletype.append('<img src="styles/image/view/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
+            travletype.append('<img src="styles/image/icon/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
         });
         $('#hotel-list ul').append(hoteldiv);
     });
