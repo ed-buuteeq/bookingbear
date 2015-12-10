@@ -1,16 +1,7 @@
 $(function(){
-    var list = [{
-        name:'dubai',
-        view:['city','mountain','natural'],
-        price: 2,
-        travletype:['family','single']
-    },{
-        name:'beijing',
-        view:['city','history','museum','mountain','shopping'],
-        price: 3,
-        travletype:['family','romantic','single']
-    }];
-    showResult(list);
+    var list = $.getJSON('./data/data.json', function(data) {
+      showResult(data.data);
+    });
 });
 
 function showResult(list){
@@ -31,10 +22,10 @@ function showResult(list){
         $.each(hotel.view, function(i,v){
             view.append('<img src="styles/image/view/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
         });
-        var travletype = $(hoteldiv.find('.city-travletype'));
-        travletype.empty();
-        $.each(hotel.travletype, function(i,v){
-            travletype.append('<img src="styles/image/view/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
+        var traveltype = $(hoteldiv.find('.city-traveltype'));
+        traveltype.empty();
+        $.each(hotel.traveltype, function(i,v){
+            traveltype.append('<img src="styles/image/view/'+ v.toLowerCase()+'.png" title="'+v+'"/>');
         });
         $('#hotel-list ul').append(hoteldiv);
     });
