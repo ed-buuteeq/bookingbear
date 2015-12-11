@@ -33,27 +33,33 @@ var QuestionBear = function() {
     var ranges = [
         {
           "min": "Cold and rainy",
-          "max": "Hot and sunny"
+          "max": "Hot and sunny",
+          "type": "weather"
         },
         {
           "min": "Frolic in nature",
-          "max": "The concrete jungle"
+          "max": "The concrete jungle",
+          "type": "weather"
         },
         {
           "min": "Tea and a cookie",
-          "max": "All night rave"
+          "max": "All night rave",
+          "type": "nightlife"
         },
         {
           "min": "On a budget",
-          "max": "Gold bath!"
+          "max": "Gold bath!",
+          "type": "price"
         },
         {
           "min": "Mickey Ds",
-          "max": "Fickle foodie"
+          "max": "Fickle foodie",
+          "type": "weather"
         },
         {
           "min": "Speak Merican",
-          "max": "Je suis polygot"
+          "max": "Je suis polygot",
+          "type": "language"
         }
       ];
 
@@ -61,7 +67,9 @@ var QuestionBear = function() {
     function nextQuestion(){
         if (questionIndex < questions.length - 1){
             questionIndex += 1;
-            $('.popover-panda .popover-content p').html(questions[questionIndex]);
+            $('.popover-panda .popover-content p')
+                .html(questions[questionIndex])
+                .data('type', ranges[questionIndex].type)
             $('.range-left').text(ranges[questionIndex].min);
             $('.range-right').text(ranges[questionIndex].max);
         }
@@ -70,14 +78,18 @@ var QuestionBear = function() {
     function previousQuestion(){
         if (questionIndex > 0){
             questionIndex -= 1;
-            $('.popover-panda .popover-content p').html(questions[questionIndex]);
+            $('.popover-panda .popover-content p')
+                .html(questions[questionIndex])
+                .data('type', ranges[questionIndex].type)
             $('.range-left').text(ranges[questionIndex].min);
             $('.range-right').text(ranges[questionIndex].max);
         }
     }
 
     function goToCityList(){
-        location.href = 'citylist.html?id=' + $('input[type="range"]').val();
+        var type = $('.popover-panda .popover-content p').data('type');
+        if (!type) type = 'weather';
+        location.href = 'citylist.html?id=' + $('input[type="range"]').val() + '&type=' + type;
     }
     
     return {

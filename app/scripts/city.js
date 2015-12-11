@@ -1,8 +1,10 @@
 $(function(){
-    var id = getUrlParameter('id');
+    var id = getUrlParameter('id'),
+        type = getUrlParameter('type');
+    if (!type) type = 'weather';
     var result = [];
     $.each(list.data, function(i, v){
-        if(v.weather == id){
+        if(v[type] == id){
                 result.push(v);
         }
     });
