@@ -1,6 +1,9 @@
 $(function(){
     var id = getUrlParameter('id');
     showResult(list.data);
+    $('.returnBtn').click(function(){
+        history.go(-1);
+    });
 });
 
 function showResult(list){
