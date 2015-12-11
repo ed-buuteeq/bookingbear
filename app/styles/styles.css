@@ -57,12 +57,12 @@ button {
 	width: 360px;
 	height: 200px;
 }
-#hotel-list .city-view img, .city-travletype img{
+#hotel-list .city-view img, .city-traveltype img{
 	width: 20px;
 	height: 20px;
 	padding:1px;
 }
-#hotel-list .city-name,#hotel-list .city-view, #hotel-list .city-travletype{
+#hotel-list .city-name,#hotel-list .city-view, #hotel-list .city-traveltype{
 	float:left;
 	padding-right: 20px;
 }
