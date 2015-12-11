@@ -5,49 +5,65 @@
     <title>The Booking Bear</title>
     <link href="styles/html5reset-1.6.1.css" type="text/css" rel="stylesheet" />
 	<link href="styles/styles.css" type="text/css" rel="stylesheet" />
+    <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    
 </head>
 <body>
-	<div class="title">
-    	<h1>The Booking Bear</h1>
-    </div>
-    <div class="content">
-	    <div id="bear">
-	    </div>
-	    <div class="decision-text">
-		    <div id="question">
-		    	<p>1. So what's your price range like?</p>
-		    	<br />
-		    	<div>
-			    	<span>$</span>
-			    	<input type="range" min="1" max="5" value="3" list="price-list" />
-			    	<datalist id="price-list">
-			    		<option>1</option>
-			    		<option>2</option>
-			    		<option>3</option>
-			    		<option>4</option>
-			    		<option>5</option>
-			    	</datalist>
-			    	<span>$$$</span>
-		    	</div>
-		    	<br />
-		    	<button type="button">Done</button> <button type="button">Don't care, Bear</button>
-		    </div>
-		    <div id="hotel-list">
-		    	<ul>
-		    		<li>City 1</li>
-		    		<li>City 2</li>
-		    		<li>City 3</li>
-		    		<li>City 4</li>
-		    		<li>City 5</li>
-		    	</ul>
-		    </div>
-	    </div>
+    <div class="container">
+    	<div class="header clearfix">
+    		<h3>ressehn</h3>
+    	</div>
+		<div class="jumbotron">
+			<div class="row">
+			  <div class="col-md-5">
+				<div class="col-xs-8 col-sm-6">
+			        <div class="bear">
+						    		
+	    			</div>
+			    </div>
+			    <div class="col-xs-4 col-sm-6">
+			        <div class="bear-text">
+			  			this is what the bear says
+			  		</div>
+			    </div>
+			  </div>
+			  <div class="col-md-7">
+			  	
+				<div class="col-xs-1 col-sm-1">
+			        <button class="btn btn-default">
+				   		<span class="glyphicon glyphicon-menu-left"></span>
+					</button>
+			    </div>
+				    <div class="col-xs-10 col-sm-10">
+				    	
+			        <div class="panel panel-default">
+					  	<div class="panel-body">
+
+					  	</div>
+					</div>
+					<div class="text-center">
+						<button type="button" class="btn btn-primary btn-lg">Go on adventure</button>
+					</div>
+			    </div>
+			    <div class="col-xs-1 col-sm-1">
+			        <button class="btn btn-default">
+				    	<span class="glyphicon glyphicon-menu-right"></span>
+					</button>
+			    </div>
+			  </div>
+			</div>
+		</div>
+		<div class="row marketing"></div>
+		<footer class="footer">
+			<p>&#169; 2015 an embarresment of pandas</p>
+		</footer>
     </div>
 
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenLite.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
-	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="scripts/app.js"></script>
 </body>
 </html>

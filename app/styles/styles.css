@@ -14,12 +14,14 @@
 	position: absolute;
 	height: 500px;
 }
-#bear {
+.bear {
 	background-color: limegreen;
 	display: inline-block;
 	height: 300px;
-	margin-top: 200px;
 	width: 200px;
+}
+.bear-text {
+
 }
 .decision-text {
 	display: inline-block;
@@ -45,3 +47,8 @@
 button {
 	font-size: 15px;
 }
+
+.btn .glyphicon {
+	vertical-align: middle;
+} 
+
