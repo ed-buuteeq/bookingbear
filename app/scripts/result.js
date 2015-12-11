@@ -7,7 +7,7 @@ $(function(){
         }
     });
     $('.returnBtn').click(function(){
-        location.href='index.html';
+        history.go(-1);
     });
 });
 

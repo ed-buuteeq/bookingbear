@@ -1,6 +1,9 @@
 $(function(){
     var id = getUrlParameter('id');
     showResult(list.data);
+    $('.returnBtn').click(function(){
+        history.go(-1);
+    });
 });
 
 function showResult(list){
@@ -13,7 +16,8 @@ function showResult(list){
         $(hoteldiv.find('.city-photo img')).attr('src','styles/image/city/'+hotel.name.toLowerCase()+'.jpg');
         $(hoteldiv.find('.city-name')).html(hotel.name);
         var price = $(hoteldiv.find('.city-price'));
-        for(var i=1;i<hotel.price;i++){
+        price.empty();
+        for(var i=0;i<hotel.price;i++){
             price.append("$");
         }
         var view = $(hoteldiv.find('.city-view'));

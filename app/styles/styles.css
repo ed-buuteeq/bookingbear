@@ -34,6 +34,10 @@
 .bear-text {
 
 }
+#bear {
+	position: relative;
+	left: -375px;
+}
 #bear .head {
 	position: relative;
 	top: 48px;
@@ -56,20 +60,34 @@
 button {
 	font-size: 15px;
 }
-#hotel-list .city-photo img{
-	width: 360px;
-	height: 200px;
+#hotel-list li{
+	margin-bottom: 25px;
 }
-#hotel-list .city-view img, .city-traveltype img{
+#hotel-list .city-photo img{
+	width: 450px;
+	height: 300px;
+}
+#hotel-list .city-view img, .city-traveltype img, .city-price img{
 	width: 20px;
 	height: 20px;
 	padding:1px;
 }
-#hotel-list .city-name,#hotel-list .city-view, #hotel-list .city-traveltype{
-	float:left;
+#hotel-list .city-name{
 	padding-right: 20px;
+	margin-left: 500px;
+	font-size: 38px;
 }
-
+#hotel-list .city-price{
+	margin-left: 500px;
+	font-size: 20px;
+}
+#hotel-list .city-traveltype, #hotel-list .city-price{
+	float: left;
+	padding-right: 10px;
+}
+#hotel-list .city-photo{
+	margin-left: 500px;
+}
 .btn .glyphicon {
 	vertical-align: middle;
 } 
