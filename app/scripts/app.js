@@ -1,6 +1,4 @@
 $(function(){
-    initPanda();
-
     // initialize the button handlers
     $('.btn-left').click(QuestionBear.prev);
     $('.btn-right').click(QuestionBear.next);
@@ -20,15 +18,6 @@ function getUrlParameter(sParam) {
         }
     }
 }
-
-function initPanda() {
-    var $panda = $("#bear");
-    TweenLite.to($panda, 3, { left: '50px' , delay: 0, onComplete:QuestionBear.firstQuestion});
-}
-
-
-
-
 
 var QuestionBear = function() {
     var questionIndex = 0;
@@ -63,14 +52,10 @@ var QuestionBear = function() {
           "max": "Fickle foodie"
         },
         {
-          "min": "Speak American",
+          "min": "Speak Merican",
           "max": "Je suis polygot"
         }
       ];
-
-    function showFirstQuestion(){
-        $('.popover-panda .popover').show();
-    }
 
 
     function nextQuestion(){
@@ -96,7 +81,6 @@ var QuestionBear = function() {
     }
     
     return {
-        firstQuestion: showFirstQuestion,
         next: nextQuestion,
         prev: previousQuestion,
         cityList: goToCityList

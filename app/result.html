@@ -5,6 +5,7 @@
     <title>The Booking Bear</title>
     <link href="styles/html5reset-1.6.1.css" type="text/css" rel="stylesheet" />
 	<link href="styles/styles.css" type="text/css" rel="stylesheet" />
+	<link href="styles/bear.css" type="text/css" rel="stylesheet" />
 	<style type="text/css">
 		html, body {
 			overflow: hidden;
@@ -23,8 +24,10 @@
 		<img src="styles/image/icon/home.png">
 	</div>
     <div class="content">
-	    <div id="bear">
-	    </div>
+	    <div id="bear" class="fly-down">
+			<img class="head" src="styles/image/panda_head.png" />
+			<img class="body" src="styles/image/panda_body.png" />
+		</div>
 	    <div class="decision-text" style="display: none;">
 		    <div id="question">
 		    	<p>Heres a hotel in the best city for you: <span id="city-name"></span>. Invest in an umbrella. Trust me.</p>
@@ -39,6 +42,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
 	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/panda.js"></script>
 	<script type="text/javascript" src="scripts/result.js"></script>
     <script type="text/javascript" src="data/data.js"></script>
 </body>

@@ -1,9 +1,16 @@
 $(function(){
     var id = getUrlParameter('id');
-    showResult(list.data);
+    var result = [];
+    $.each(list.data, function(i, v){
+        if(v.weather == id){
+                result.push(v);
+        }
+    });
+    showResult(result);
     $('.returnBtn').click(function(){
         history.go(-1);
     });
+    initPanda();
 });
 
 function showResult(list){
@@ -32,4 +39,10 @@ function showResult(list){
         });
         $('#hotel-list ul').append(hoteldiv);
     });
+}
+
+function initPanda() {
+    var $panda = $("#bear");
+    TweenLite.to($panda, 3, { bottom: '50px' , delay: 1});
+    pandaChuckle($panda, 4);
 }
