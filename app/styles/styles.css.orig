@@ -14,6 +14,17 @@
 	position: absolute;
 	height: 500px;
 }
+<<<<<<< HEAD
+.bear {
+	background-color: limegreen;
+	display: inline-block;
+	height: 300px;
+	width: 200px;
+}
+.bear-text {
+
+}
+=======
 .returnBtn{
 	position: absolute;
 	height:70px;
@@ -25,14 +36,11 @@
 	width: 70px;
 	height: 70px;
 }
-.bear {
+#bear {
 	display: inline-block;
 	height: 350px;
-	margin-top: 200px;
+	margin-top: 246px;
 	width: 250px;
-}
-.bear-text {
-
 }
 #bear .head {
 	position: relative;
@@ -42,6 +50,7 @@
 	z-index: 3;
 }
 
+>>>>>>> d61f0ec768e39651f63f767d7410f0c832929c38
 .decision-text {
 	display: inline-block;
 	padding-left: 150px;
@@ -56,6 +65,13 @@
 button {
 	font-size: 15px;
 }
+<<<<<<< HEAD
+
+.btn .glyphicon {
+	vertical-align: middle;
+} 
+
+=======
 #hotel-list .city-photo img{
 	width: 360px;
 	height: 200px;
@@ -69,8 +85,4 @@ button {
 	float:left;
 	padding-right: 20px;
 }
-
-.btn .glyphicon {
-	vertical-align: middle;
-} 
-
+>>>>>>> d61f0ec768e39651f63f767d7410f0c832929c38
