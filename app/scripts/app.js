@@ -1,7 +1,16 @@
 $(function(){
-    var list = $.getJSON('./data/data.json', function(data) {
-      showResult(data.data);
-    });
+    var defaultval = {
+        "weather" : 2,
+        "view" : ["natural", "mountain", "city"],
+        "nightlife" : 2,
+        "price" : 1,
+        "food" : [1, 1, 1],
+        "culture" : [2, 2, 2],
+        "language" : 1,
+        "traveltype" : ["family", "single"],
+        "link" : "http://www.booking.com/city/us/seattle.html?label=gen173nr-15CAEoggJCAlhYSDNiBW5vcmVmcgV1c193YYgBAZgBMbgBBMgBBNgBA-gBAfgBAg;sid=901363ff0b5c3bcd1ffb5293526df10b;dcid=1;city=20144883;lp_index2sr=1;ilp=1"
+    };
+    showResult(list.data);
 });
 
 function showResult(list){

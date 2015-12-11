@@ -1,4 +1,4 @@
-{"data" : [
+var list = {"data" : [
   {"name" : "Seattle",
     "weather" : 2,
     "view" : ["natural", "mountain", "city"],
