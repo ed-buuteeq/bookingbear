@@ -91,4 +91,12 @@ button {
 .btn .glyphicon {
 	vertical-align: middle;
 } 
+.popover-panda .popover {
+  position: relative;
+  display: none;
+  margin: 20px;
+}
+.vacation-attribute-range {
+	margin-top: 20px;
+}
 

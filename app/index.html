@@ -6,6 +6,7 @@
     <link href="styles/html5reset-1.6.1.css" type="text/css" rel="stylesheet" />
 	<link href="styles/styles.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" href="../bower_components/bootstrap/dist/css/bootstrap.min.css" type="text/css">
+    
 </head>
 <body>
     <div class="container">
@@ -22,15 +23,20 @@
 	    			</div>
 			    </div>
 			    <div class="col-xs-4 col-sm-6">
-			        <div class="bear-text">
-			  			this is what the bear says
-			  		</div>
+			        <div class="popover-panda">
+				        <div class="popover right">
+				        	<div class="arrow"></div> 
+				        	<div class="popover-content"> 
+				        		<p>What kind of weather do you like?</p>
+				        	</div> 
+				        </div>
+			        </div>
 			    </div>
 			  </div>
 			  <div class="col-md-7">
 			  	
 				<div class="col-xs-1 col-sm-1">
-			        <button class="btn btn-default">
+			        <button class="btn btn-default btn-left">
 				   		<span class="glyphicon glyphicon-menu-left"></span>
 					</button>
 			    </div>
@@ -38,15 +44,34 @@
 				    	
 			        <div class="panel panel-default">
 					  	<div class="panel-body">
-
+							<div class="col-xs-6 col-sm-6">
+						        <div class="range-left text-left">
+						        	Cold and rainy
+						        </div>
+						    </div>
+						    <div class="col-xs-6 col-sm-6">
+						        <div class="range-right text-right">
+						        	Hot and sunny
+						        </div>
+						    </div>
+							<div class="vacation-attribute-range">
+								<input type="range" name="points" min="1" max="5" step="1" list="steplist">
+								<datalist id="steplist">
+								    <option>1</option>
+								    <option>2</option>
+								    <option>3</option>
+								    <option>4</option>
+								    <option>5</option>
+								</datalist>
+							</div>
 					  	</div>
 					</div>
 					<div class="text-center">
-						<button type="button" class="btn btn-primary btn-lg">Go on adventure</button>
+						<button type="button" class="btn btn-adventure btn-primary btn-lg">Go on an adventure</button>
 					</div>
 			    </div>
 			    <div class="col-xs-1 col-sm-1">
-			        <button class="btn btn-default">
+			        <button class="btn btn-default btn-right">
 				    	<span class="glyphicon glyphicon-menu-right"></span>
 					</button>
 			  </div>
@@ -65,8 +90,7 @@
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/plugins/CSSPlugin.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/easing/EasePack.min.js"></script>
 	<script type="text/javascript" src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="data/data.js"></script>
-	<script type="text/javascript" src="scripts/panda.js"></script>
     <script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="data/data.js"></script>
 </body>
 </html>
