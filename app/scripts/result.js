@@ -1,4 +1,8 @@
 $(function(){
+    initPanda();
+});
+
+$(function(){
     var city = getUrlParameter('city');
     $.each(list.data, function(i, v){
         if(v.name.toLowerCase() == city.toLowerCase()){
@@ -10,4 +14,10 @@ $(function(){
         history.go(-1);
     });
 });
+
+function initPanda() {
+    var $panda = $("#bear");
+    TweenLite.to($panda, 3, { bottom: '50px' , delay: 5});
+    pandaTalk($panda, 8);
+}
 
