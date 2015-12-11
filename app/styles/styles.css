@@ -57,19 +57,22 @@ button {
 	font-size: 15px;
 }
 #hotel-list .city-photo img{
-	width: 360px;
-	height: 200px;
+	width: 450px;
+	height: 300px;
 }
 #hotel-list .city-view img, .city-traveltype img{
 	width: 20px;
 	height: 20px;
 	padding:1px;
 }
-#hotel-list .city-name,#hotel-list .city-view, #hotel-list .city-traveltype{
+#hotel-list .city-name, #hotel-list .city-traveltype{
 	float:left;
 	padding-right: 20px;
+	margin-left: 500px;
 }
-
+#hotel-list .city-photo{
+	margin-left: 500px;
+}
 .btn .glyphicon {
 	vertical-align: middle;
 } 
