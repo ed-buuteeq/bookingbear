@@ -34,6 +34,10 @@
 .bear-text {
 
 }
+#bear {
+	position: relative;
+	left: -375px;
+}
 #bear .head {
 	position: relative;
 	top: 48px;
